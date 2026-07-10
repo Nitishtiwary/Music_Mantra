@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO -->
+  <title>Muzic Mantra | Official Band Website</title>
+  <meta name="description" content="Muzic Mantra — an electrifying alternative rock band blending cinematic soundscapes with raw energy. Listen to our latest album, watch videos, and get tour dates.">
+  <meta name="keywords" content="Muzic Mantra, band, rock music, alternative rock, live shows, album, tour dates">
+  <meta name="author" content="Muzic Mantra">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourusername.github.io/Muzic_Mantra/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muzic Mantra | Official Band Website">
+  <meta property="og:description" content="Experience the sound of Muzic Mantra — alternative rock with a neon soul. New album out now.">
+  <meta property="og:url" content="https://yourusername.github.io/Muzic_Mantra/">
+  <meta property="og:image" content="https://yourusername.github.io/Muzic_Mantra/images/og-cover.jpg">
+  <meta property="og:site_name" content="Muzic Mantra">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muzic Mantra | Official Band Website">
+  <meta name="twitter:description" content="Experience the sound of Muzic Mantra — alternative rock with a neon soul.">
+  <meta name="twitter:image" content="https://yourusername.github.io/Muzic_Mantra/images/og-cover.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" role="status" aria-label="Page loading">
+    <div class="loader__inner">
+      <div class="loader__logo">MM</div>
+      <div class="loader__bar"><span class="loader__progress"></span></div>
+      <p class="loader__text">Tuning up...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgress"></div>
+  </div>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Muzic Mantra home">
+        <span class="nav__logo-text">Muzic Mantra</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+        <li><a href="#band" class="nav__link" data-section="band">Band</a></li>
+        <li><a href="#album" class="nav__link" data-section="album">Album</a></li>
+        <li><a href="#videos" class="nav__link" data-section="videos">Videos</a></li>
+        <li><a href="#tours" class="nav__link" data-section="tours">Tours</a></li>
+        <li><a href="#gallery" class="nav__link" data-section="gallery">Gallery</a></li>
+        <li><a href="#merch" class="nav__link" data-section="merch">Merch</a></li>
+        <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=80" aria-hidden="true">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-concert-crowd-waving-hands-4880-large.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__floating hero__floating--1" aria-hidden="true"></div>
+      <div class="hero__floating hero__floating--2" aria-hidden="true"></div>
+      <div class="hero__floating hero__floating--3" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow fade-in">Est. 2018 · Worldwide</p>
+        <h1 class="hero__title">
+          <span class="hero__title-main">Muzic Mantra</span>
+        </h1>
+        <p class="hero__tagline">
+          <span id="typingText" aria-live="polite"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </p>
+        <div class="hero__cta fade-in">
+          <a href="#album" class="btn btn--primary btn--animated">
+            <span>Listen Now</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+          <a href="#tours" class="btn btn--outline btn--animated">
+            <span>Upcoming Shows</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Our Story</span>
+          <h2 id="about-heading" class="section__title">About the Band</h2>
+          <p class="section__subtitle">Four souls, one frequency — crafting anthems for the midnight generation.</p>
+        </header>
+
+        <div class="about__grid">
+          <article class="glass-card about__story reveal">
+            <h3 class="about__card-title">The Story</h3>
+            <p>Born in a cramped garage studio in Mumbai, Muzic Mantra started as a late-night experiment between friends who believed music could be both visceral and transcendent. What began as jam sessions fueled by chai and distortion pedals evolved into a global movement.</p>
+            <p>Our debut EP caught fire on indie playlists, and we've spent the last six years touring continents, headlining festivals, and pushing the boundaries of alternative rock.</p>
+          </article>
+
+          <article class="glass-card about__mission reveal">
+            <h3 class="about__card-title">Our Mission</h3>
+            <p>We create music that bridges the gap between stadium-sized energy and intimate confession. Every song is a mantra — a repeated truth you carry with you long after the last chord fades.</p>
+          </article>
+
+          <article class="glass-card about__style reveal">
+            <h3 class="about__card-title">Musical Style</h3>
+            <p>A fusion of alternative rock, synth-wave undertones, and cinematic post-rock. Think soaring guitars meeting pulsing electronic textures, with lyrics that cut straight to the bone.</p>
+            <ul class="about__tags">
+              <li>Alternative Rock</li>
+              <li>Synth-Wave</li>
+              <li>Post-Rock</li>
+              <li>Indie</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline reveal" aria-label="Band achievements timeline">
+          <h3 class="timeline__title">Timeline of Achievements</h3>
+          <ol class="timeline__list">
+            <li class="timeline__item">
+              <span class="timeline__year">2018</span>
+              <div class="timeline__content glass-card">
+                <h4>Formation</h4>
+                <p>Muzic Mantra forms in Mumbai. First live show at a 200-capacity venue sells out in 48 hours.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2019</span>
+              <div class="timeline__content glass-card">
+                <h4>Debut EP — "Neon Pulse"</h4>
+                <p>Released independently. Featured on Spotify's "Fresh Finds" and crossed 1M streams in three months.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2021</span>
+              <div class="timeline__content glass-card">
+                <h4>First International Tour</h4>
+                <p>15 cities across Asia and Europe. Headlined IndieWave Festival in Berlin to 8,000 fans.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2023</span>
+              <div class="timeline__content glass-card">
+                <h4>Album "Midnight Frequencies"</h4>
+                <p>Debut full-length album. #3 on indie charts. Nominated for Best Alternative Album at the Global Music Awards.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__year">2025</span>
+              <div class="timeline__content glass-card">
+                <h4>World Tour & New Single</h4>
+                <p>"Electric Devotion" single hits 5M streams. Sold-out arena tour across 30 cities worldwide.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Band -->
+    <section class="section band" id="band" aria-labelledby="band-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">The Crew</span>
+          <h2 id="band-heading" class="section__title">Meet the Band</h2>
+          <p class="section__subtitle">The faces behind the frequency.</p>
+        </header>
+
+        <div class="band__grid">
+          <article class="member-card reveal">
+            <div class="member-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80" alt="Arjun Mehta — Lead Vocals & Rhythm Guitar" class="member-card__image" loading="lazy" width="400" height="500">
+              <div class="member-card__overlay">
+                <div class="member-card__socials">
+                  <a href="#" aria-label="Arjun on Instagram" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                  <a href="#" aria-label="Arjun on Twitter" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Arjun Mehta</h3>
+              <p class="member-card__role">Lead Vocals & Rhythm Guitar</p>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop&q=80" alt="Priya Sharma — Lead Guitar & Synth" class="member-card__image" loading="lazy" width="400" height="500">
+              <div class="member-card__overlay">
+                <div class="member-card__socials">
+                  <a href="#" aria-label="Priya on Instagram" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                  <a href="#" aria-label="Priya on Twitter" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Priya Sharma</h3>
+              <p class="member-card__role">Lead Guitar & Synth</p>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&q=80" alt="Rohan Das — Bass Guitar" class="member-card__image" loading="lazy" width="400" height="500">
+              <div class="member-card__overlay">
+                <div class="member-card__socials">
+                  <a href="#" aria-label="Rohan on Instagram" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                  <a href="#" aria-label="Rohan on Twitter" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Rohan Das</h3>
+              <p class="member-card__role">Bass Guitar</p>
+            </div>
+          </article>
+
+          <article class="member-card reveal">
+            <div class="member-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&q=80" alt="Vikram Patel — Drums & Percussion" class="member-card__image" loading="lazy" width="400" height="500">
+              <div class="member-card__overlay">
+                <div class="member-card__socials">
+                  <a href="#" aria-label="Vikram on Instagram" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                  <a href="#" aria-label="Vikram on Twitter" class="member-card__social"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="member-card__info">
+              <h3 class="member-card__name">Vikram Patel</h3>
+              <p class="member-card__role">Drums & Percussion</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Album -->
+    <section class="section album" id="album" aria-labelledby="album-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">New Release</span>
+          <h2 id="album-heading" class="section__title">Midnight Frequencies</h2>
+          <p class="section__subtitle">Our latest album — 12 tracks of pure electric devotion.</p>
+        </header>
+
+        <div class="album__grid">
+          <div class="album__artwork reveal">
+            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=600&h=600&fit=crop&q=80" alt="Midnight Frequencies album cover art" class="album__cover" loading="lazy" width="600" height="600">
+          </div>
+
+          <div class="album__details reveal">
+            <ol class="tracklist" aria-label="Album track list">
+              <li class="tracklist__item"><span class="tracklist__num">01</span><span class="tracklist__title">Electric Devotion</span><span class="tracklist__duration">4:12</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">02</span><span class="tracklist__title">Neon Cathedral</span><span class="tracklist__duration">3:48</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">03</span><span class="tracklist__title">Pulse &amp; Prayer</span><span class="tracklist__duration">5:01</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">04</span><span class="tracklist__title">Midnight Run</span><span class="tracklist__duration">3:55</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">05</span><span class="tracklist__title">Glass Horizon</span><span class="tracklist__duration">4:33</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">06</span><span class="tracklist__title">Frequency Shift</span><span class="tracklist__duration">3:22</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">07</span><span class="tracklist__title">Echo Chamber</span><span class="tracklist__duration">4:47</span></li>
+              <li class="tracklist__item"><span class="tracklist__num">08</span><span class="tracklist__title">Starlit Static</span><span class="tracklist__duration">3:39</span></li>
+            </ol>
+
+            <div class="album__player glass-card">
+              <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/4m2880jivSbbyEGAKbiy4d?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title="Spotify player — Midnight Frequencies">
+              </iframe>
+            </div>
+
+            <div class="album__platforms">
+              <a href="#" class="btn btn--platform btn--apple" aria-label="Listen on Apple Music">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Apple Music
+              </a>
+              <a href="#" class="btn btn--platform btn--youtube" aria-label="Listen on YouTube Music">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                YouTube Music
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Videos -->
+    <section class="section videos" id="videos" aria-labelledby="videos-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Watch</span>
+          <h2 id="videos-heading" class="section__title">Music Videos</h2>
+          <p class="section__subtitle">Featured releases and live performances.</p>
+        </header>
+
+        <div class="videos__grid">
+          <article class="video-card reveal glass-card">
+            <div class="video-card__embed">
+              <iframe
+                src="https://www.youtube.com/embed/fJ9rUzIMcZQ"
+                title="Electric Devotion — Official Music Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <h3 class="video-card__title">Electric Devotion</h3>
+            <p class="video-card__meta">Official Music Video · 2025</p>
+          </article>
+
+          <article class="video-card reveal glass-card">
+            <div class="video-card__embed">
+              <iframe
+                src="https://www.youtube.com/embed/ktvTqknDobU"
+                title="Neon Cathedral — Live at IndieWave Festival"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <h3 class="video-card__title">Neon Cathedral (Live)</h3>
+            <p class="video-card__meta">IndieWave Festival · Berlin 2023</p>
+          </article>
+
+          <article class="video-card reveal glass-card">
+            <div class="video-card__embed">
+              <iframe
+                src="https://www.youtube.com/embed/450p7goxZqg"
+                title="Pulse and Prayer — Acoustic Session"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <h3 class="video-card__title">Pulse &amp; Prayer (Acoustic)</h3>
+            <p class="video-card__meta">Studio Session · 2024</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Tours -->
+    <section class="section tours" id="tours" aria-labelledby="tours-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">On the Road</span>
+          <h2 id="tours-heading" class="section__title">Upcoming Tours</h2>
+          <p class="section__subtitle">Catch us live — the energy hits different in person.</p>
+        </header>
+
+        <div class="tours__grid">
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-07-18">
+              <span class="tour-card__day">18</span>
+              <span class="tour-card__month">Jul</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">Blue Frog Arena</h3>
+              <p class="tour-card__city">Mumbai, India</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-08-02">
+              <span class="tour-card__day">02</span>
+              <span class="tour-card__month">Aug</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">Indira Gandhi Stadium</h3>
+              <p class="tour-card__city">New Delhi, India</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-08-15">
+              <span class="tour-card__day">15</span>
+              <span class="tour-card__month">Aug</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">O2 Academy Brixton</h3>
+              <p class="tour-card__city">London, UK</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-09-05">
+              <span class="tour-card__day">05</span>
+              <span class="tour-card__month">Sep</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">Brooklyn Steel</h3>
+              <p class="tour-card__city">New York, USA</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-09-20">
+              <span class="tour-card__day">20</span>
+              <span class="tour-card__month">Sep</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">Metro Chicago</h3>
+              <p class="tour-card__city">Chicago, USA</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+
+          <article class="tour-card reveal glass-card">
+            <time class="tour-card__date" datetime="2026-10-10">
+              <span class="tour-card__day">10</span>
+              <span class="tour-card__month">Oct</span>
+            </time>
+            <div class="tour-card__info">
+              <h3 class="tour-card__venue">Zepp Tokyo</h3>
+              <p class="tour-card__city">Tokyo, Japan</p>
+            </div>
+            <a href="#" class="btn btn--primary btn--sm">Buy Tickets</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Moments</span>
+          <h2 id="gallery-heading" class="section__title">Gallery</h2>
+          <p class="section__subtitle">Behind the scenes, on stage, and everywhere in between.</p>
+        </header>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <figure class="gallery__item reveal" data-index="0">
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=800&fit=crop&q=80" alt="Band performing live on stage with colorful lights" loading="lazy" width="600" height="800">
+          </figure>
+          <figure class="gallery__item reveal" data-index="1">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&h=400&fit=crop&q=80" alt="Concert crowd with raised hands and stage lights" loading="lazy" width="600" height="400">
+          </figure>
+          <figure class="gallery__item reveal" data-index="2">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=500&fit=crop&q=80" alt="Guitarist playing on stage during a live show" loading="lazy" width="600" height="500">
+          </figure>
+          <figure class="gallery__item reveal" data-index="3">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&h=700&fit=crop&q=80" alt="Outdoor music festival stage at sunset" loading="lazy" width="600" height="700">
+          </figure>
+          <figure class="gallery__item reveal" data-index="4">
+            <img src="https://images.unsplash.com/photo-1429962710677-5610f998c599?w=600&h=450&fit=crop&q=80" alt="Band members backstage before a show" loading="lazy" width="600" height="450">
+          </figure>
+          <figure class="gallery__item reveal" data-index="5">
+            <img src="https://images.unsplash.com/photo-1514320291840-7554159e9c1b?w=600&h=600&fit=crop&q=80" alt="Drummer performing energetically on stage" loading="lazy" width="600" height="600">
+          </figure>
+          <figure class="gallery__item reveal" data-index="6">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&h=550&fit=crop&q=80" alt="DJ and live music setup with neon lighting" loading="lazy" width="600" height="550">
+          </figure>
+          <figure class="gallery__item reveal" data-index="7">
+            <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&h=750&fit=crop&q=80" alt="Large arena concert with laser light show" loading="lazy" width="600" height="750">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+      <div class="lightbox__content">
+        <img src="" alt="" id="lightboxImage" class="lightbox__image">
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <!-- Merchandise -->
+    <section class="section merch" id="merch" aria-labelledby="merch-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Shop</span>
+          <h2 id="merch-heading" class="section__title">Merchandise</h2>
+          <p class="section__subtitle">Wear the mantra. Limited edition drops available now.</p>
+        </header>
+
+        <div class="merch__grid">
+          <article class="merch-card reveal glass-card">
+            <div class="merch-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&q=80" alt="Electric Devotion tour t-shirt" class="merch-card__image" loading="lazy" width="400" height="400">
+              <span class="merch-card__badge">Bestseller</span>
+            </div>
+            <div class="merch-card__info">
+              <h3 class="merch-card__name">Electric Devotion Tee</h3>
+              <p class="merch-card__type">T-Shirt</p>
+              <p class="merch-card__price">$29.99</p>
+              <a href="#" class="btn btn--primary btn--sm btn--block">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="merch-card reveal glass-card">
+            <div class="merch-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=400&fit=crop&q=80" alt="Midnight Frequencies hoodie" class="merch-card__image" loading="lazy" width="400" height="400">
+            </div>
+            <div class="merch-card__info">
+              <h3 class="merch-card__name">Midnight Hoodie</h3>
+              <p class="merch-card__type">Hoodie</p>
+              <p class="merch-card__price">$59.99</p>
+              <a href="#" class="btn btn--primary btn--sm btn--block">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="merch-card reveal glass-card">
+            <div class="merch-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1603048588665-791ca794924b?w=400&h=400&fit=crop&q=80" alt="Midnight Frequencies vinyl record" class="merch-card__image" loading="lazy" width="400" height="400">
+              <span class="merch-card__badge merch-card__badge--limited">Limited</span>
+            </div>
+            <div class="merch-card__info">
+              <h3 class="merch-card__name">Midnight Frequencies Vinyl</h3>
+              <p class="merch-card__type">Vinyl · 180g</p>
+              <p class="merch-card__price">$34.99</p>
+              <a href="#" class="btn btn--primary btn--sm btn--block">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="merch-card reveal glass-card">
+            <div class="merch-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop&q=80" alt="Neon tour poster" class="merch-card__image" loading="lazy" width="400" height="400">
+            </div>
+            <div class="merch-card__info">
+              <h3 class="merch-card__name">Neon Tour Poster</h3>
+              <p class="merch-card__type">Poster · 24×36"</p>
+              <p class="merch-card__price">$19.99</p>
+              <a href="#" class="btn btn--primary btn--sm btn--block">Buy Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter__inner glass-card reveal">
+          <header class="newsletter__header">
+            <span class="section__eyebrow">Stay Connected</span>
+            <h2 id="newsletter-heading" class="section__title">Join the Mantra</h2>
+            <p class="section__subtitle">Get exclusive drops, presale access, and behind-the-scenes content.</p>
+          </header>
+
+          <form class="newsletter__form" id="newsletterForm" novalidate>
+            <div class="form-group">
+              <label for="newsletterEmail" class="visually-hidden">Email address</label>
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+                aria-describedby="newsletterError newsletterSuccess">
+              <button type="submit" class="btn btn--primary btn--animated">Subscribe</button>
+            </div>
+            <p class="form-error" id="newsletterError" role="alert" hidden></p>
+            <p class="form-success" id="newsletterSuccess" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Get in Touch</span>
+          <h2 id="contact-heading" class="section__title">Contact Us</h2>
+          <p class="section__subtitle">Booking, press, or just saying hello — we'd love to hear from you.</p>
+        </header>
+
+        <div class="contact__grid">
+          <form class="contact__form glass-card reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" class="form-input" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" class="form-input" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" class="form-input" required>
+            </div>
+            <div class="form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="5" required></textarea>
+            </div>
+            <p class="form-error" id="contactError" role="alert" hidden></p>
+            <p class="form-success" id="contactSuccess" role="status" hidden></p>
+            <button type="submit" class="btn btn--primary btn--animated">Send Message</button>
+          </form>
+
+          <aside class="contact__info reveal">
+            <div class="contact__card glass-card">
+              <h3>General Inquiries</h3>
+              <a href="mailto:hello@muzicmantra.com" class="contact__link">hello@muzicmantra.com</a>
+            </div>
+            <div class="contact__card glass-card">
+              <h3>Management</h3>
+              <p>Neon Pulse Management</p>
+              <a href="mailto:booking@muzicmantra.com" class="contact__link">booking@muzicmantra.com</a>
+            </div>
+            <div class="contact__socials">
+              <a href="#" class="contact__social" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="#" class="contact__social" aria-label="Twitter / X"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" class="contact__social" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              <a href="#" class="contact__social" aria-label="Spotify"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo">Muzic Mantra</a>
+          <p class="footer__tagline">Feel the frequency. Live the mantra.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <h3 class="footer__nav-title">Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#album">Music</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#merch">Merch</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <h3 class="footer__nav-title">Follow Us</h3>
+          <div class="footer__social-icons">
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="#" aria-label="Spotify"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Muzic Mantra. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

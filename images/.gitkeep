@@ -1,0 +1,18 @@
+# Placeholder for local images
+
+Replace royalty-free Unsplash URLs in `index.html` with your own band photos:
+
+- Hero poster/video fallback
+- Band member portraits
+- Album artwork
+- Gallery images
+- Merchandise product shots
+- Open Graph cover (`images/og-cover.jpg`)
+
+Recommended image sizes:
+- Hero: 1920×1080
+- Members: 400×500
+- Album: 600×600
+- Gallery: varied (masonry)
+- Merch: 400×400
+- OG cover: 1200×630
