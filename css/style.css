@@ -614,41 +614,7 @@ button {
   );
 }
 
-.hero__floating {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.3;
-  animation: float 8s ease-in-out infinite;
-  z-index: 1;
-  pointer-events: none;
-}
 
-.hero__floating--1 {
-  width: 300px;
-  height: 300px;
-  background: var(--color-primary);
-  top: 20%;
-  left: 10%;
-}
-
-.hero__floating--2 {
-  width: 200px;
-  height: 200px;
-  background: var(--color-secondary);
-  top: 60%;
-  right: 15%;
-  animation-delay: -3s;
-}
-
-.hero__floating--3 {
-  width: 150px;
-  height: 150px;
-  background: var(--color-accent);
-  bottom: 20%;
-  left: 40%;
-  animation-delay: -5s;
-}
 
 @keyframes float {
   0%, 100% { transform: translateY(0) scale(1); }
@@ -679,12 +645,6 @@ button {
   text-shadow: 0 0 60px var(--color-primary-glow);
 }
 
-.hero__tagline {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: var(--color-text-muted);
-  margin-block: var(--space-lg) var(--space-2xl);
-  min-height: 2em;
-}
 
 .typing-cursor {
   color: var(--color-primary);
