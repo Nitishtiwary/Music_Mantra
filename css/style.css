@@ -602,6 +602,12 @@ button {
   object-position: center;
   display: block;
 }
+.hero__tagline {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: var(--color-text-muted);
+  margin-block: var(--space-lg) var(--space-2xl);
+  min-height: 2em;
+}
 .hero__floating {
   position: absolute;
   border-radius: 50%;
